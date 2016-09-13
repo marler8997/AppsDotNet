@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MoreRootPath>$(MSBuildProjectDirectory)\..\..\More</MoreRootPath>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <Import Project="$(MoreRootPath)\Build\CSharpProject.include" />
+  <PropertyGroup>
+    <ProjectGuid>{CEB26B0D-F873-4B9E-8E1E-F2B631488142}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Pcap</AssemblyName>
+  </PropertyGroup>
+  <Import Project="$(TargetImportFile)" />
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="NativeFile.cs" />
+    <Compile Include="Pcap.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\More\ByteString\More.ByteString.csproj">
+      <Project>{E623347B-D9F9-49D1-ABD4-CCF5ED95C576}</Project>
+      <Name>More.ByteString</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\More\Reflection\More.Reflection.csproj">
+      <Project>{7F839F8F-0BEC-41F8-8ACE-DC2E382FD172}</Project>
+      <Name>More.Reflection</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\More\Serialization\More.Serialization.csproj">
+      <Project>{88353C67-982B-419E-B7EF-07C832910911}</Project>
+      <Name>More.Serialization</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

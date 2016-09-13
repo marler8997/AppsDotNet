@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MoreRootPath>$(MSBuildProjectDirectory)\..\..\More</MoreRootPath>
+    <ProductVersion>9.0.30729</ProductVersion>
+  </PropertyGroup>
+  <Import Project="$(MoreRootPath)\Build\CSharpProject.include" />
+  <PropertyGroup>
+    <ProjectGuid>{0CEE2741-E9F0-456E-BAB7-0529A32AF37D}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>NetworkAdapter</AssemblyName>
+  </PropertyGroup>
+  <Import Project="$(TargetImportFile)" />
+  <ItemGroup>
+    <Compile Include="ClientServer.cs" />
+    <Compile Include="NetworkAdapterMain.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\More\Config\More.Config.csproj">
+      <Project>{7A299A33-5FE0-4550-92E8-B09E945C90F2}</Project>
+      <Name>More.Config</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\More\Core\More.Core.csproj">
+      <Project>{DA7E67C2-CE13-43B3-9F03-F7BFAC405E62}</Project>
+      <Name>More.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\More\Net\Dns\More.Net.Dns.csproj">
+      <Project>{B8EE685A-137B-47B1-A972-BFB09AA2D486}</Project>
+      <Name>More.Net.Dns</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\More\Net\More.Net.csproj">
+      <Project>{40C821C1-E019-46D1-9365-8AD5F5925ADE}</Project>
+      <Name>More.Net</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
