@@ -20,6 +20,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "More.Reflection", "..\More\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "More.ByteString", "..\More\ByteString\More.ByteString.csproj", "{E623347B-D9F9-49D1-ABD4-CCF5ED95C576}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdpCat", "UdpCat\UdpCat.csproj", "{71B4D292-2C61-42E8-B314-52C6AD255077}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -88,6 +90,12 @@ Global
 		{E623347B-D9F9-49D1-ABD4-CCF5ED95C576}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E623347B-D9F9-49D1-ABD4-CCF5ED95C576}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E623347B-D9F9-49D1-ABD4-CCF5ED95C576}.Release|x86.ActiveCfg = Release|Any CPU
+		{71B4D292-2C61-42E8-B314-52C6AD255077}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71B4D292-2C61-42E8-B314-52C6AD255077}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71B4D292-2C61-42E8-B314-52C6AD255077}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{71B4D292-2C61-42E8-B314-52C6AD255077}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71B4D292-2C61-42E8-B314-52C6AD255077}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71B4D292-2C61-42E8-B314-52C6AD255077}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -6,16 +6,15 @@
   </PropertyGroup>
   <Import Project="$(MoreRootPath)\Build\CSharpProject.include" />
   <PropertyGroup>
-    <ProjectGuid>{0CEE2741-E9F0-456E-BAB7-0529A32AF37D}</ProjectGuid>
+    <ProjectGuid>{71B4D292-2C61-42e8-B314-52C6AD255077}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>NetworkAdapter</AssemblyName>
+    <AssemblyName>UdpCat</AssemblyName>
   </PropertyGroup>
   <Import Project="$(TargetImportFile)" />
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ClientServer.cs" />
-    <Compile Include="NetworkAdapterMain.cs" />
+    <Compile Include="UdpCat.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
