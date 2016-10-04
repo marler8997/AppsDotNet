@@ -167,6 +167,22 @@ public class UdpCat
                 {
                     break;
                 }
+                if (consoleToSocketBuffer[bytesRead - 1] == '\n')
+                {
+                    bytesRead--;
+                    if (bytesRead == 0)
+                    {
+                        continue;
+                    }
+                    if (consoleToSocketBuffer[bytesRead - 1] == '\r')
+                    {
+                        bytesRead--;
+                    }
+                    if (bytesRead == 0)
+                    {
+                        continue;
+                    }
+                }
                 udpSocket.SendTo(consoleToSocketBuffer, 0, bytesRead, SocketFlags.None, remoteEndPoint);
             }
         }

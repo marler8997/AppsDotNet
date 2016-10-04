@@ -22,6 +22,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "More.ByteString", "..\More\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdpCat", "UdpCat\UdpCat.csproj", "{71B4D292-2C61-42E8-B314-52C6AD255077}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCat", "NetCat\NetCat.csproj", "{4D692416-8E80-47F9-95B3-2B2B978A0D55}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -96,6 +98,12 @@ Global
 		{71B4D292-2C61-42E8-B314-52C6AD255077}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71B4D292-2C61-42E8-B314-52C6AD255077}.Release|Any CPU.Build.0 = Release|Any CPU
 		{71B4D292-2C61-42E8-B314-52C6AD255077}.Release|x86.ActiveCfg = Release|Any CPU
+		{4D692416-8E80-47F9-95B3-2B2B978A0D55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D692416-8E80-47F9-95B3-2B2B978A0D55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D692416-8E80-47F9-95B3-2B2B978A0D55}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4D692416-8E80-47F9-95B3-2B2B978A0D55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D692416-8E80-47F9-95B3-2B2B978A0D55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D692416-8E80-47F9-95B3-2B2B978A0D55}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
