@@ -6,17 +6,30 @@
   </PropertyGroup>
   <Import Project="$(MoreRootPath)\Build\CSharpProject.include" />
   <PropertyGroup>
-    <ProjectGuid>{4D692416-8E80-47F9-95B3-2B2B978A0D55}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{4E844E6B-37B0-4FD1-829C-DBC488C164E1}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>NetCat</AssemblyName>
+    <RootNamespace>More.Nfs</RootNamespace>
+    <AssemblyName>NfsServerLibrary</AssemblyName>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="NetCat.cs" />
+    <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="System" />
+    <Compile Include="ControlServer.cs" />
+    <Compile Include="IFileIDDictionary.cs" />
+    <Compile Include="IPermissions.cs" />
+    <Compile Include="JediTimer.cs" />
+    <Compile Include="Mount1And3Server.cs" />
+    <Compile Include="Nfs3Server.cs" />
+    <Compile Include="NfsServerLog.cs" />
+    <Compile Include="NfsServerMain.cs" />
+    <Compile Include="NpcClasses.cs" />
+    <Compile Include="PortMap2Server.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RpcServicesManager.cs" />
+    <Compile Include="SharedFileSystem.cs" />
+    <Compile Include="ShareObject.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\More\Config\More.Config.csproj">
@@ -27,13 +40,13 @@
       <Project>{DA7E67C2-CE13-43B3-9F03-F7BFAC405E62}</Project>
       <Name>More.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\More\Net\Dns\More.Net.Dns.csproj">
-      <Project>{B8EE685A-137B-47B1-A972-BFB09AA2D486}</Project>
-      <Name>More.Net.Dns</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\More\Net\More.Net.csproj">
       <Project>{40C821C1-E019-46D1-9365-8AD5F5925ADE}</Project>
       <Name>More.Net</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NfsLibrary\NfsLibrary.csproj">
+      <Project>{86EC1EDE-CD36-42E0-964D-708A242A9D2B}</Project>
+      <Name>NfsLibrary</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(TargetImportFile)" />
